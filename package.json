@@ -1,0 +1,17 @@
+{
+  "name": "Base64ImageConverter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts" :{
+    "start" : "node app.js",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mime-types": "^2.1.31",
+    "multer": "^1.4.2"
+  }
+}

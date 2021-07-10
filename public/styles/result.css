@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+  text-align: center;
+}
+
+.mainContainer {
+  width: calc(100vw - 70px);
+  margin: 0 auto;
+}
+
+.codeContainer {
+  height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.encodedString {
+  word-wrap: break-word;
+  width: 50%;
+  color: black;
+}
+
+.copyButton {
+  padding: 9px 30px;
+  background-color: #1f3c88;
+  border: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  margin: 18px 0;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.copyButton:hover {
+  background-color: #173686fd;
+}

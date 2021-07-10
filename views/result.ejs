@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base 64 Encoded Image</title>
+    <link rel="stylesheet" href="styles/result.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <button onclick="copyToClipboard('code')" class="copyButton">COPY</button>
+      <div class="codeContainer">
+        <code class="encodedString"><%= data %></code>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        alert("Copied Whole Base64 Encoded Text");
+      }
+    </script>
+  </body>
+</html>
